@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "timestamp": "20251030_135506",
+    "model_type": "vanilla_rnn",
+    "submission_version": "3.0",
+    "total_training_time_seconds": 733.6898510456085,
+    "chain_seed": "0ca7ca9073b93c14fa8bb7a201f80fae05311eb992a390346c4b7b0db4218703",
+    "final_hash": "7cdbcf117e9933d0c5859eeee493eb1d3ac1ad0125329667f40813a6ec2617c4",
+    "weights_hash": "3093cbe0b0c1a4d0582a99b8242a624a19dedd63d469082166dd1b8fb8c2281e"
+  },
+  "model_params": {
+    "vocab_size": 3000,
+    "d_model": 512,
+    "n_heads": 8,
+    "n_layers": 6,
+    "batch_size": 64,
+    "seq_length": 64,
+    "learning_rate": 0.001,
+    "epochs": 2
+  },
+  "final_metrics": {
+    "train_loss": 3.9498918552459106,
+    "val_loss": 4.115818305540893,
+    "perplexity": 61.302357802645304
+  },
+  "training_history": {
+    "epochs": [
+      1,
+      2
+    ],
+    "train_loss": [
+      4.490505963973033,
+      3.9498918552459106
+    ],
+    "val_loss": [
+      4.23235996193805,
+      4.115818305540893
+    ],
+    "perplexity": [
+      68.87959373446152,
+      61.302357802645304
+    ],
+    "logged_at": [
+      "2025-10-30T14:01:01.342172",
+      "2025-10-30T14:07:19.337102"
+    ],
+    "elapsed_time": [
+      352.73626708984375,
+      730.7312111854553
+    ],
+    "epoch_hashes": [
+      "d2e22b3fd86bd3d6b46df06821d38fbbca583da9ecfc419bc3e26f251abdd5d6",
+      "7cdbcf117e9933d0c5859eeee493eb1d3ac1ad0125329667f40813a6ec2617c4"
+    ],
+    "previous_hashes": [
+      "0ca7ca9073b93c14fa8bb7a201f80fae05311eb992a390346c4b7b0db4218703",
+      "d2e22b3fd86bd3d6b46df06821d38fbbca583da9ecfc419bc3e26f251abdd5d6"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+Starting...
+Graph mode enabled for transformer model (better GPU performance)
+MYSTERY CORPUS TRAINING
+Timestamp: 20251030_220236
+Data file: data/mystery_data.pkl
+Starting data loading...
+Generate-only mode: Loading existing model...
+Found saved config: submission/transformer/transformer_config.json
+Loaded model configuration:
+  vocab_size: 10000
+  d_model: 512
+  seq_length: 256
+  model_type: transformer
+LOADING MYSTERY CORPUS DATA
+============================================================
+PREPARING MYSTERY CORPUS DATA FOR BRUNO
+============================================================
+Loading mystery data from data/mystery_data.pkl...
+Data preparation complete!
+============================================================
+Vocabulary size from pickle: 10,000
+CREATING TRANSFORMER MODEL
+Building model...
+Model built with input: <dtype: 'int32'> and output: <dtype: 'float32'>
+Model created with 29,143,040 trainable parameters
+Model weights loaded from: submission/transformer/transformer_model.weights.h5
+Generating sample text...
+
+============================================================
+SAMPLE TEXT GENERATION
+============================================================
+
+Prompt 1: 'The detective examined'
+------------------------------------------------------------
+the detective examined. him him. a., and unk and., his so at in unk and and, the. by he. and. unk the and;, a a it. in a the my by him his life unk to unk. to a him his. poe unk. the unk with his new, - by such. him his. him him unk his - him., a a and for,, him him him and., unk a, unk he a a unk had the and
+
+
+Prompt 2: 'In the dimly lit room'
+------------------------------------------------------------
+in the dimly lit room unk.., in by,; the of,.. with their... with.. unk his of the, by unk, unk for her - to unk,. for the his the her the at unk the all. him him the unk the, was his the the. and. the he in his to him him. his unk his vanity and. his as the his by the... by himself. unk to a! the as,.. the him the their
+
+
+Prompt 3: 'The murder weapon was'
+------------------------------------------------------------
+the murder weapon was a. to, in.. from., himself the him,. it by,, and,.. and,,. unk. his to at with unk his the and and, unk. a the unk and unk, the a,., a the to the his in. his unk for, to unk. the unk his unk her. was. his,. by and., and, to unk to the poe. a unk,. a. unk a in unk -
+
+
+Prompt 4: 'Holmes deduced that'
+------------------------------------------------------------
+holmes deduced that, it.. the and..,. the. me,,, and.,,, in. his. a. and, unk his. had with. unk. - a from a; -, the. vanity, a his in unk his the the unk, the. unk,. by a to that - at unk. unk of a the; him -. his his his. him his, and. by the, the so even,.. himself, unk the
+
+
+Prompt 5: [Random generation]
+------------------------------------------------------------
+unk,,. by to.. to. - the... and. and. in., unk and to, unk. the he.. the. to,. the their unk at to unk him the, and at, him the the himself him in unk by for he vanity a unk the by his, her him, he, unk unk. poe unk in it the, the. a in. the, in. him to at unk unk. unk in.. unk,
+
+============================================================
+Mystery corpus training complete!

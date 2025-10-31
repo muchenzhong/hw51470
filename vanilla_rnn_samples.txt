@@ -1,0 +1,61 @@
+Starting...
+Eager execution enabled for vanilla_rnn model
+MYSTERY CORPUS TRAINING
+Timestamp: 20251030_141332
+Data file: data/mystery_data.pkl
+Starting data loading...
+Generate-only mode: Loading existing model...
+Found saved config: submission/vanilla_rnn/vanilla_rnn_config.json
+Loaded model configuration:
+  vocab_size: 3000
+  d_model: 512
+  seq_length: 64
+  model_type: vanilla_rnn
+LOADING MYSTERY CORPUS DATA
+============================================================
+PREPARING MYSTERY CORPUS DATA FOR BRUNO
+============================================================
+Loading mystery data from data/mystery_data.pkl...
+Limiting vocabulary from 10000 to 3000 tokens...
+  Vocabulary reduced from 10000 to 3000 tokens
+  Special tokens: ['<PAD>', '<UNK>', '<EOS>']
+Data preparation complete!
+============================================================
+Vocabulary size from pickle: 3,000
+CREATING VANILLA_RNN MODEL
+Building model...
+Model built with input: <dtype: 'int32'> and output: <dtype: 'float32'>
+Model created with 3,599,800 trainable parameters
+Model weights loaded from: submission/vanilla_rnn/vanilla_rnn_model.weights.h5
+Generating sample text...
+
+============================================================
+SAMPLE TEXT GENERATION
+============================================================
+
+Prompt 1: 'The detective examined'
+------------------------------------------------------------
+the detective examined to out out. to.,.,.., with: from to unk to of,..: in. of.,. to when unk of the she i. a the his what there was poirot unk i the unk had it matter had the: unk to. unk to" keep the unk on their unk?"" yes. ” “ what did you do? it is very well, mr. brott, ” he said. “ unk! ” said the visitor. “
+
+
+Prompt 2: 'In the dimly lit room'
+------------------------------------------------------------
+in the unk lit room unk.., to upon, out. the,..; during..,;..,? to.. himself, unk, her i be he unk unk. which. but. for i is unk! able, as there.,, to you ” he, said the unk, he turned down to her chair, and unk her fingers. “ what time you want me to unk you. this morning, the unk of all the house, and of the next day or
+
+
+Prompt 3: 'The murder weapon was'
+------------------------------------------------------------
+the murder weapon was a. to, to.. or., during. or,. for:,, and,.. and,,. unk. had to" if unk what that i" the unk to ” the unk, unk the, you the unk the of, unk unk unk that, was unk; and a unk, unk unk and unk of unk. the unk unk, or the unk, to unk and unk. i dare not think, to you the unk, you know, my
+
+
+Prompt 4: 'Holmes deduced that'
+------------------------------------------------------------
+holmes unk that, was... and..,... from,,, and.,,, to. her. to. and,, his and at “. unk. his as then as however" unk i it favourite the ” ’ he the" was., unk unk “ unk unk, but he is not in all unk, unk. ” “ why did you come on? ” “ yes. i can ’ t see the unk! why, i have given a unk of
+
+
+Prompt 5: [Random generation]
+------------------------------------------------------------
+unk,, and: to.. to. to........ in., unk of to,,.. in... and his unk. i _ unk". unk when unk unk i this. now, said! i he unk morning you. wish that, he mr. unk?"" don ' t unk the meaning," said poirot," i say."" i can ' t think! and unk, unk - i ’ s unk
+
+============================================================
+Mystery corpus training complete!
