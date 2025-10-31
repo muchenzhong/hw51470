@@ -202,16 +202,15 @@ def create_sequences(tokens: List[int], seq_length: int) -> np.ndarray:
     """
     sequences = []
     # TODO: Create non-overlapping sequences from token list
-    step = seq_length + 1
-    n_full = (len(tokens) // step) * step
-    if n_full == 0:
-        return np.empty((0, step), dtype=np.int32)
-        
-    arr = np.asarray(tokens[:n_full], dtype=np.int32)
-    sequences = arr.reshape(-1, step)
 
-    
+    step = seq_length
+    for i in range(0, len(tokens) - seq_length, step):
+        seq = tokens[i:i + seq_length + 1]
+        if len(seq) == seq_length + 1:
+            sequences.append(seq)
     return np.array(sequences, dtype=np.int32)
+
+
 
 def create_tf_datasets(train_tokens: List[int], test_tokens: List[int],
                       seq_length: int = 256, batch_size: int = 16) -> Tuple[tf.data.Dataset, tf.data.Dataset]:
